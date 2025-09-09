@@ -1,0 +1,21 @@
+Category,Name,Location,Price,Size,Extra1,Extra2,Extra3
+Residential,Sunny Apartments,Berlin,1200,75,True,True,3
+Residential,Luxury Loft,Munich,2500,90,False,True,2
+Residential,Cozy Studio,Hamburg,800,40,True,False,1
+Residential,Family Home,Cologne,1800,120,True,False,5
+Residential,Old Town Flat,Dresden,950,60,False,False,2
+Residential,Skyline Tower,Frankfurt,3000,110,False,True,4
+Residential,Student Flat,Leipzig,700,35,True,False,1
+Residential,Garden House,Stuttgart,2000,140,True,True,6
+Residential,Budget Apartment,Bremen,650,45,False,False,1
+Residential,Penthouse,Düsseldorf,4000,150,True,True,4
+Commercial,Tech Hub,Berlin,5000,300,True,5,Office
+Commercial,Retail Center,Munich,8000,600,True,2,Retail
+Commercial,Startup Garage,Hamburg,3000,200,False,1,Office
+Commercial,Industrial Hall,Cologne,10000,1200,True,1,Warehouse
+Commercial,Shared Offices,Frankfurt,4500,250,False,3,Co-working
+Commercial,Showroom,Stuttgart,7000,400,True,2,Retail
+Commercial,Logistics Hub,Dortmund,12000,1500,True,1,Warehouse
+Commercial,Small Office,Leipzig,2800,150,False,2,Office
+Commercial,Business Tower,Düsseldorf,15000,800,True,20,Office
+Commercial,Art Gallery,Bremen,3500,220,False,2,Retail

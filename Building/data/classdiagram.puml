@@ -1,0 +1,73 @@
+// alt + D für vorschau
+@startuml BuildingClassDiagram
+
+class Building {
+  - name: String
+  - location: String
+  - price: int
+  - size: int
+  --
+  + getName(): String
+  + getLocation(): String
+  + getPrice(): int
+  + getSize(): int
+}
+
+class ResidentialBuilding {
+  - petsAllowed: boolean
+  - hasElevator: boolean
+  - rooms: int
+  --
+  + isPetsAllowed(): boolean
+  + isHasElevator(): boolean
+  + getRooms(): int
+}
+
+class CommercialBuilding {
+  - hasParking: boolean
+  - floors: int
+  - type: String
+  --
+  + isHasParking(): boolean
+  + getFloors(): int
+  + getType(): String
+}
+
+class BuildingManager {
+  - allBuildings: List<Building>
+  --
+  + run(): void
+  - handleResidential(): void
+  - handleCommercial(): void
+  - loadBuildingsFromCsv(path: String): List<Building>
+}
+
+class Main {
+  + main(args: String[]): void
+}
+
+class InputHelper {
+  - TriBool: enum { YES, NO, ANY }
+  --
+  + readTriBool(): TriBool
+  + readInt(): int
+  + readString(): String
+  + matchTriBool(): boolean
+  + inRange(): boolean
+}
+
+class Printer {
+  + printResults(list: List<Building>): void
+}
+
+Building <|-- ResidentialBuilding
+Building <|-- CommercialBuilding
+
+Main --> BuildingManager
+BuildingManager --> Building
+BuildingManager --> ResidentialBuilding
+BuildingManager --> CommercialBuilding
+BuildingManager --> InputHelper
+BuildingManager --> Printer
+
+@enduml
