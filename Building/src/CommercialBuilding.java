@@ -1,31 +1,17 @@
 public class CommercialBuilding extends Building {
-    String businessType;
-    int numOffices;
-    boolean hasConferenceRoom;
-    double officeArea;
+    private boolean hasParking;
+    private int floors;
+    private String type; // Office, Retail, Warehouse, ...
 
-    public CommercialBuilding(String address, int floors, double area, boolean hasElevator,
-                              String businessType, int numOffices, boolean hasConferenceRoom, double officeArea) {
-        super(address, floors, area, hasElevator); // Call to the superclass constructor
-        this.businessType = businessType;
-        this.numOffices = numOffices;
-        this.hasConferenceRoom = hasConferenceRoom;
-        this.officeArea = officeArea;
+    public CommercialBuilding(String name, String location, int price, int size,
+                              boolean hasParking, int floors, String type) {
+        super(name, location, price, size);
+        this.hasParking = hasParking;
+        this.floors = floors;
+        this.type = type;
     }
 
-    @Override
-    public double calculateTotalRent() {
-        double baseRentPerSqM = 20.0; // Example base rent per square meter
-        return officeArea * baseRentPerSqM;
-}
-    @Override
-    public void printInfo() {
-        super.printInfo();
-        System.out.println("Business Type: " + businessType);
-        System.out.println("Number of Offices: " + numOffices);
-        System.out.println("Has Conference Room: " + hasConferenceRoom);
-        System.out.println("Office Area: " + officeArea + " square meters");
-        System.out.println("Rent per Square Meter: € 20.0" );
-        System.out.println("Total Rent: € " + calculateTotalRent());
-    }
+    public boolean isHasParking() { return hasParking; }
+    public int getFloors() { return floors; }
+    public String getType() { return type; }
 }
