@@ -1,25 +1,21 @@
 public abstract class Building {
-    String address;
-    int floors;
-    double area;
-    boolean hasElevator;
+    private final String name;
+    private final String city;
+    private final String address;
+    private final int price; // monthly rent in EUR
+    private final int size;  // m²
 
-    public Building(String address, int floors, double area, boolean hasElevator) {
+    protected Building(String name, String city, String address, int price, int size) {
+        this.name = name;
+        this.city = city;
         this.address = address;
-        this.floors = floors;
-        this.area = area;
-        this.hasElevator = hasElevator;
+        this.price = price;
+        this.size = size;
     }
 
-    public abstract double calculateTotalRent();
-    
-
-    public void printInfo() {
-        System.out.println("Address: " + address);
-        System.out.println("Floors: " + floors);
-        System.out.println("Area: " + area + " square meters");
-        System.out.println("Has Elevator: " + hasElevator);
-    }
-
+    public String getName() { return name; }
+    public String getCity() { return city; }
+    public String getAddress() { return address; }
+    public int getPrice() { return price; }
+    public int getSize() { return size; }
 }
-

@@ -1,29 +1,21 @@
-public class ResidentialBuilding extends Building {
-    int numApartments;
-    boolean hasParking;
-    boolean allowPets;
+public final class ResidentialBuilding extends Building {
+    private final boolean petsAllowed;
+    private final boolean hasElevator;
+    private final int rooms;
+    private final int salePrice; // total price to buy the apartment
 
-    public ResidentialBuilding(String address, int floors, double area, boolean hasElevator,
-                               int numApartments, boolean hasParking, boolean allowPets) {
-        super(address, floors, area, hasElevator); // Call to the superclass constructor
-        this.numApartments = numApartments;
-        this.hasParking = hasParking;
-        this.allowPets = allowPets;
+    public ResidentialBuilding(String name, String city, String address, int rentPrice, int size,
+                               boolean petsAllowed, boolean hasElevator, int rooms,
+                               int salePrice) {
+        super(name, city, address, rentPrice, size);
+        this.petsAllowed = petsAllowed;
+        this.hasElevator = hasElevator;
+        this.rooms = rooms;
+        this.salePrice = salePrice;
     }
 
-    @Override
-    public double calculateTotalRent() {
-        double baseRentPerSqM = 15.0; // Example base rent per square meter
-        return area * baseRentPerSqM;
-    }
-
-    @Override
-    public void printInfo() {
-        super.printInfo();
-        System.out.println("Number of Apartments: " + numApartments);
-        System.out.println("Has Parking: " + hasParking);
-        System.out.println("Allows Pets: " + allowPets);
-        System.out.println("Rent per Square Meter: € 15.0" );
-        System.out.println("Total Rent: € " + calculateTotalRent());
-    }
+    public boolean isPetsAllowed() { return petsAllowed; }
+    public boolean isHasElevator() { return hasElevator; }
+    public int getRooms() { return rooms; }
+    public int getSalePrice() { return salePrice; }
 }

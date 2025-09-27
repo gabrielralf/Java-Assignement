@@ -1,21 +1,21 @@
-Category,Name,Location,Price,Size,Extra1,Extra2,Extra3
-Residential,Sunny Apartments,Berlin,1200,75,True,True,3
-Residential,Luxury Loft,Munich,2500,90,False,True,2
-Residential,Cozy Studio,Hamburg,800,40,True,False,1
-Residential,Family Home,Cologne,1800,120,True,False,5
-Residential,Old Town Flat,Dresden,950,60,False,False,2
-Residential,Skyline Tower,Frankfurt,3000,110,False,True,4
-Residential,Student Flat,Leipzig,700,35,True,False,1
-Residential,Garden House,Stuttgart,2000,140,True,True,6
-Residential,Budget Apartment,Bremen,650,45,False,False,1
-Residential,Penthouse,Düsseldorf,4000,150,True,True,4
-Commercial,Tech Hub,Berlin,5000,300,True,5,Office
-Commercial,Retail Center,Munich,8000,600,True,2,Retail
-Commercial,Startup Garage,Hamburg,3000,200,False,1,Office
-Commercial,Industrial Hall,Cologne,10000,1200,True,1,Warehouse
-Commercial,Shared Offices,Frankfurt,4500,250,False,3,Co-working
-Commercial,Showroom,Stuttgart,7000,400,True,2,Retail
-Commercial,Logistics Hub,Dortmund,12000,1500,True,1,Warehouse
-Commercial,Small Office,Leipzig,2800,150,False,2,Office
-Commercial,Business Tower,Düsseldorf,15000,800,True,20,Office
-Commercial,Art Gallery,Bremen,3500,220,False,2,Retail
+Category,Name,City,Address,MonthlyRent,Size,Extra1,Extra2,Extra3,SalePrice,SalePriceWhole
+Residential,Sunny Apartments,Berlin,Alexanderplatz 1,1200,75,true,true,3,365000,
+Residential,Luxury Loft,Munich,Maximilianstraße 12,2500,90,false,true,2,810000,
+Residential,Cozy Studio,Hamburg,Reeperbahn 50,800,40,true,false,1,195000,
+Residential,Family Home,Cologne,Domstraße 8,1800,120,true,false,5,520000,
+Residential,Old Town Flat,Dresnen,Neumarkt 4,950,60,false,false,2,235000,
+Residential,Skyline Tower,Frankfurt,Mainzer Landstraße 200,3000,110,false,true,4,990000,
+Residential,Student Flat,Leipzig,Karl-Liebknecht-Straße 30,700,35,true,false,1,145000,
+Residential,Garden House,Stuttgart,Schlossstraße 22,2000,140,true,true,6,640000,
+Residential,Budget Apartment,Bremen,Am Wall 70,650,45,false,false,1,165000,
+Residential,Penthouse,Düsseldorf,Königsallee 1,4000,150,true,true,4,1250000,
+Commercial,Tech Hub,Berlin,Invalidenstraße 116,5000,300,true,5,Office,1250000,9800000
+Commercial,Retail Center,Munich,Tal 5,8000,600,true,2,Retail,2100000,15500000
+Commercial,Startup Garage,Hamburg,Fischmarkt 2,3000,200,false,1,Office,720000,5200000
+Commercial,Industrial Hall,Cologne,Industriestraße 40,10000,1200,true,1,Warehouse,2600000,18000000
+Commercial,Shared Offices,Frankfurt,Taunusanlage 15,4500,250,false,3,Co-working,980000,6900000
+Commercial,Showroom,Stuttgart,Theodor-Heuss-Straße 20,7000,400,true,2,Retail,1650000,11800000
+Commercial,Logistics Hub,Dortmund,Bodelschwingher Str. 75,12000,1500,true,1,Warehouse,3100000,22500000
+Commercial,Small Office,Leipzig,Markt 1,2800,150,false,2,Office,520000,4100000
+Commercial,Business Tower,Düsseldorf,Haroldstraße 30,15000,800,true,20,Office,3850000,32000000
+Commercial,Art Gallery,Bremen,Böttcherstraße 3,3500,220,false,2,Retail,640000,4800000
