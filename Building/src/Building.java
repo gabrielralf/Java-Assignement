@@ -1,23 +1,21 @@
 public abstract class Building {
-    protected String name;
-    protected String location;
-    protected int price;   // monthly rent in EUR
-    protected int size;    // square meters
+    private final String name;
+    private final String city;
+    private final String address;
+    private final int price; // monthly rent in EUR
+    private final int size;  // m²
 
-    public Building(String name, String location, int price, int size) {
+    protected Building(String name, String city, String address, int price, int size) {
         this.name = name;
-        this.location = location;
+        this.city = city;
+        this.address = address;
         this.price = price;
         this.size = size;
     }
 
     public String getName() { return name; }
-    public String getLocation() { return location; }
+    public String getCity() { return city; }
+    public String getAddress() { return address; }
     public int getPrice() { return price; }
     public int getSize() { return size; }
-
-    @Override
-    public String toString() {
-        return String.format("%s (%s) – €%d, %dm²", name, location, price, size);
-    }
 }

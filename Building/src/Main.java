@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) throws Exception {
-        BuildingManager manager = new BuildingManager("buildings.csv");
+        BuildingRepository repo = new CsvBuildingRepository("data/buildings.csv");
+        BuildingManager manager = new BuildingManager(repo);
         manager.run();
     }
 }
